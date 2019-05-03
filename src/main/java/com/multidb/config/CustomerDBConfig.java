@@ -20,7 +20,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @EnableTransactionManagement
 @EnableJpaRepositories(
   entityManagerFactoryRef = "entityManagerFactory",
-  basePackages = { "com.multidb.customer.repository" }
+  basePackages = { "com.multidb.repository.customer" }
 )
 public class CustomerDBConfig {
 	
@@ -37,7 +37,7 @@ public class CustomerDBConfig {
 	public LocalContainerEntityManagerFactoryBean entityManagerFactory( EntityManagerFactoryBuilder builder, @Qualifier("dataSource") DataSource dataSource) {
 		return builder
 	      .dataSource(dataSource)
-	      .packages("com.multidb.customer.entity")
+	      .packages("com.multidb.entity.customer")
 	      .persistenceUnit("CustomerDB")
 	      .build();
 	}

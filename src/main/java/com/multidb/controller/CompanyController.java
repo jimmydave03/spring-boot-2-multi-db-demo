@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.multidb.customer.entity.Customer;
-import com.multidb.employee.entity.Employee;
+import com.multidb.entity.customer.Customer;
+import com.multidb.entity.employee.Employee;
 import com.multidb.service.CompanyService;
 
 @RestController

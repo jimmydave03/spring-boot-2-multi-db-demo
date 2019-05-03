@@ -3,10 +3,10 @@ package com.multidb.service.impl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.multidb.customer.entity.Customer;
-import com.multidb.customer.repository.CustomerRepository;
-import com.multidb.employee.entity.Employee;
-import com.multidb.employee.repository.EmployeeRepository;
+import com.multidb.entity.customer.Customer;
+import com.multidb.entity.employee.Employee;
+import com.multidb.repository.customer.CustomerRepository;
+import com.multidb.repository.employee.EmployeeRepository;
 import com.multidb.service.CompanyService;
 
 @Service
